@@ -4,10 +4,7 @@ int p(int n){
     int resultado = 1;
     int k = 0;
 
-    for(k = 1; k <= n; k = k + 1){
-        resultado = resultado * k; 
-    }
-     
+    if(n > 1) resultado = n * p(n-1);
     
     return resultado;
 }
